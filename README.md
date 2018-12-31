@@ -6,4 +6,4 @@ before full backup VM i run this script, that write big file(whole free filesyst
 
 this may reduse full backup because all free space on VM contain zeroes  
 
-in my VM 500Gb file was deflated to 498Gb =) maybe you will obtain more
+in my case 401Gb backup file was "deflated" to 293Gb =) maybe you will obtain more
