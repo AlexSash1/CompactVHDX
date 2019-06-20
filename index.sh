@@ -13,7 +13,7 @@ sizenullfileGb=`echo "$sizenullfilekb/1048576" | /usr/bin/bc -l`
 sizenullfileGb_cuted=`echo $sizenullfileGb | cut -f 1 -d .`
 
 #log this size
-echo $sizenullfileGb size of writing file in Gygabyte
+echo "$sizenullfileGb size of writing file in Gygabyte"
 
 #write file from zeroes
 dd if=/dev/zero of=/tmp/null.file bs=1G count=$sizenullfileGb_cuted
