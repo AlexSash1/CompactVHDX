@@ -25,6 +25,11 @@ echo "$sizenullfileGb size of writing file in Gygabyte"
 #write file from zeroes
 dd if=/dev/zero of=/tmp/null.file bs=1G count=$sizenullfileGb_cuted
 
+sync
+
+sleep 10 
+
+sync
 #delete file
 rm -f /tmp/null.file
-
+sync
